@@ -1,0 +1,1 @@
+/home/zzc/llvm-13.0/build/bin/clang++ CMakeFiles/example9.dir/example9.cpp.o -o example9  libcommon.a 

@@ -1,0 +1,39 @@
+Results: (7c5e742b): 
+Example1 ed7aa26a 
+Example2a b9b28d5b 
+Example2b 67808d19 ?
+Example3 b4412829 
+Example4a 132bc4c6 
+Example4b 132bc4c6 ?
+Example4c b4412829 
+Example7 eb3492a9 ?
+Example8 7e51915b 
+Example9 0 
+Example10a 61ffda0c 
+Example10b f95b0406 
+Example11 495fecb4  ?
+Example12 ab6b4a02 
+Example23 bdaa178a 
+Example24 0 
+Example25 67808d19
+
+  BENCH("Example1",   example1(), Mi*10, digest_memory(&a[0], &a[256]));
+  BENCH("Example2a",  example2a(N, 2), Mi*4, digest_memory(&b[0], &b[N]));
+  BENCH("Example2b",  example2b(N, 2), Mi*2, digest_memory(&a[0], &a[N]));
+  BENCH("Example3",   example3(N, ia, ib), Mi*2, digest_memory(&ia[0], &ia[N]));
+  BENCH("Example4a",  example4a(N, ia, ib), Mi*2, digest_memory(&ia[0], &ia[N]));
+  BENCH("Example4b",  example4b(N-10, ia, ib), Mi*2, digest_memory(&ia[0], &ia[N]));
+  BENCH("Example4c",  example4c(N, ia, ib), Mi*2, digest_memory(&ib[0], &ib[N]));
+  BENCH("Example7",   example7(4), Mi*4, digest_memory(&a[0], &a[N]));
+  BENCH("Example8",   example8(8), Mi/4, digest_memory(&G[0][0], &G[0][N]));
+  BENCH("Example9",   example9(&dummy), Mi*2, dummy);
+  BENCH("Example10a", example10a(sa,sb,sc,ia,ib,ic), Mi*2, digest_memory(&ia[0], &ia[N]) + digest_memory(&sa[0], &sa[N]));
+  BENCH("Example10b", example10b(sa,sb,sc,ia,ib,ic), Mi*4, digest_memory(&ia[0], &ia[N]));
+  BENCH("Example11",  example11(), Mi*2, digest_memory(&d[0], &d[N]));
+  BENCH("Example12",  example12(), Mi*4, digest_memory(&a[0], &a[N]));
+  //BENCH("Example21",  example21(ia, N), Mi*4, digest_memory(&ia[0], &ia[N]));
+  BENCH("Example23",  example23(usa,ua), Mi*8, digest_memory(&usa[0], &usa[256]));
+  BENCH("Example24",  example24(2,4), Mi*2, 0);
+  BENCH("Example25",  example25(), Mi*2, digest_memory(&dj[0], &dj[N]));
+
+exit 0

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/example3.cpp
+sys/time.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+iostream
+-
+vector
+-
+numeric
+-
+memory.h
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/memory.h
+macros.h
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/macros.h
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/macros.h
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/memory.h
+sys/time.h
+-
+

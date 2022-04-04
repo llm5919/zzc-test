@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/runtime-checks/example1.cpp
+functional
+-
+iostream
+-
+limits
+-
+memory
+-
+random
+-
+stdint.h
+-
+chrono
+-
+

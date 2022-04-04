@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/memory.cpp
+memory.h
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/memory.h
+
+/home2/lilimin/llvm-test-suite-main/SingleSource/UnitTests/Vectorizer/src/gcc-loops/memory.h
+sys/time.h
+-
+
